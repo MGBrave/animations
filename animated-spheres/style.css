@@ -1,0 +1,59 @@
+body {
+    background: rgb(10, 10, 10);
+    text-align: center;
+    padding: 20%;
+  }
+  h2 {
+    color:#fff;
+    margin: 0;
+    font: .8em verdana;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+  }
+  
+
+  .loading span {
+    display: inline-block;
+    vertical-align: middle;
+    width: .6em;
+    height: .6em;
+    margin: .19em;
+    background: #eefa02;
+    border-radius: .6em;
+    animation: loading 1s infinite alternate;
+  }
+  
+  .loading span:nth-of-type(2) {
+    background-image: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);
+    animation-delay: 0.2s;
+  }
+  .loading span:nth-of-type(3) {
+    background-image: linear-gradient(to right, #f83600 0%, #f9d423 100%);
+    animation-delay: 0.4s;
+  }
+  .loading span:nth-of-type(4) {
+    background-image: linear-gradient(to top, #e8198b 0%, #c7eafd 100%);
+    animation-delay: 0.6s;
+  }
+  .loading span:nth-of-type(5) {
+    background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%);
+    animation-delay: 0.8s;
+  }
+  .loading span:nth-of-type(6) {
+    background-image: linear-gradient(to top, #0fd850 0%, #f9f047 100%);
+    animation-delay: 1.0s;
+  }
+  .loading span:nth-of-type(7) {
+     background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    animation-delay: 1.2s;
+  }
+  
+
+  @keyframes loading {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
